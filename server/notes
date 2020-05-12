@@ -1,0 +1,39 @@
+#Normal Query call
+
+{
+  authors {
+    name,
+    books{
+      name,
+      genre
+    }
+  }
+}
+
+# {
+#   author(id: "2"){
+#     name, 
+#     age
+#     books{
+#       name
+#       genre
+#     }
+#   }
+# }
+
+#Operation name
+
+# query getBookData {
+# 	book(id: "2"){
+#     name,
+#     genre
+#   } 
+# }
+
+
+# Fragments
+
+# fragment allData on Book {
+#   name, 
+#   id
+# }
